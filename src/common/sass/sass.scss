@@ -1,0 +1,49 @@
+.loginBox {background: #fff; min-height: 13.34rem;
+  .loginBanner {background: #f8f8f8;  width: 100%; }
+   .loginMsgBox { padding: 0.3rem;
+      div {position: relative; padding: 0.1rem 0;  width: 100%;
+       span {display: inline-block; position: absolute; top: 0.25rem; right: 0.2rem;height: 0.5rem;line-height: 0.5rem;border: solid 0.02rem #ff6b00; border-radius: 0.3rem;padding: 0 0.2rem;color: rgba(255, 107, 0, 1); font-size: 0.24rem;  font-weight: 500;font-family: PingFangSC-Medium;}
+       .iconbox{position: absolute;  top: 16px; width: .42rem; height: .42rem; display: inline-block; margin: 0; padding: 0;}
+       span.disable {border: solid 0.02rem #999; color: #999; opacity: 0.4;}
+     }
+     input { display: block; width: 92%; height: 0.65rem; line-height: 0.65rem; border-bottom: solid 0.02rem #ddd; padding: 0.1rem;padding-left: 0.6rem;}
+     input.tel { font-size: 0.34rem;  color: #333; }
+     input.yzm { font-size: 0.34rem; color: #333;      }
+   }
+   .loginbtn {width: 90%;display: block; margin: 0.1rem 0.33rem 0.5rem 0.33rem; height: 0.8rem; line-height: 0.8rem; background: linear-gradient(90deg, #ff974c, #ff6b00); color: #fff; border-radius: 0.05rem; font-weight: bold; font-size: 0.3rem;}
+   .loginbtn.disable {opacity: 0.5;}
+   .loginrulue {text-align: center; color: #999;line-height: 0.42rem;font-size: 0.24rem;
+     em {list-style: none; color: rgba(255, 107, 0, 1);}
+     .toast {position: fixed;z-index: 2000; left: 50%; top: 45%; transition: all 0.5s; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%);  transform: translateX(-50%) translateY(-50%); text-align: center; border-radius: 0.05rem; color: #fff; background: rgba(17, 17, 17, 0.7); height: 0.55rem; line-height:0.55rem;  padding: 0 0.25rem;}
+   }
+ }
+.wxloadingDiv{width:100%; height:100%; display: flex; justify-content: center; align-items: center;
+ .loadingPic{width: 2rem;  background-size: 100%; background: url(../../common/images/base/loading.png) center no-repeat;}
+  img{margin-top: -20%;}
+}
+
+//通用登录样式
+.base{
+  .loginBanner{height:5.2rem; background: url(./common/images/base/background.jpg) top left no-repeat; background-size: 100%;}
+ .loginMsgBox {
+   div{
+     .icon_tel{background: url(../../common/images/base/mobile.svg) center  no-repeat; background-size: 100%;}
+     .icon_mail{background: url(../../common/images/base/mail.svg) center  no-repeat; background-size: 100%;}
+   }
+ }
+} 
+
+//中国银行登录样式
+.boc{
+ .loginBanner{height:9.58rem; background: url(../../common/images/boc/img.png) top left no-repeat; background-size: 100%;}
+ .loginMsgBox {padding-bottom: 0rem;
+   div{border:solid .02rem #ffb2b2; border-radius: 1rem; overflow: hidden; height: .86rem; margin: 0 auto; margin-bottom: .3rem; padding: 0; width: 85%;
+    span{top:.18rem; border:none; border-left: solid .02rem #ddd; border-radius: 0;}
+    span.disable{border: none; border-left: solid .02rem #ddd;}
+     input{display: inline-block; width: 90%; height: 0.72rem; line-height: 0.72rem;  padding: 0.1rem; padding-left: 0.6rem;border-bottom: none; margin-left: .25rem;}
+     .icon_tel{background: url(../../common/images/boc/icon-phone.png) top left  no-repeat; background-size: 100%; margin-left: .2rem; height: 0.46rem; width: .48rem; top: 14px; border-right:dashed .02rem #ddd;}
+     .icon_mail{background: url(../../common/images/boc/icon-code.png)  top left no-repeat; background-size: 100%; margin-left: .2rem; height: 0.46rem; width: .48rem; top: 14px; border-right:dashed .02rem #ddd;}
+   }
+ }
+ .loginbtn{width: 80%; margin: 0.1rem auto; border-radius: 1rem; background: linear-gradient(90deg, #c11919, #ef4f4f);}
+}
